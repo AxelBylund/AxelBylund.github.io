@@ -50,6 +50,10 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
+title {
+  font-size: 200%;
+  font-weight: bold; }
+
 .nav {
   position: relative;
   display: block;
