@@ -1,28 +1,40 @@
+<!DOCTYPE html>
 <html>
-
 <head>
-  <title>Cloud Nine Seach engine</title>
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-  <script type="text/javascript" src="main.js"></script>
+	<meta charset="UTF-8">
+	<title>Title</title>
 </head>
-
 <body>
-  <div id="searchContainer">
-
-    <img src="https://www.marketingtechblog.com/wp-content/uploads/2010/06/example-logo.png">
-
-    <form id="searchForm" class="ui-widget" action="http://google.com/cse">
-      <input type="hidden" name="cx" value="partner-pub-2789521296837340:9402765321" />
-      <input type="hidden" name="ie" value="UTF-8" />
-
-      <input id="searchbox" name="q" type="text" placeholder="Search" />
-      <button id="searchbutton" type="submit" value="search">Search</button>
-    </form>
-  </div>
-  <div id="result"></div>
+	<nav class="nav">
+		<ul class="nav-list">
+			<li class="nav-item name"><a href="#logo">AxelB</a></li>
+			<li class="nav-item"><a href="#aboutme">About me</a></li>
+			<li class="nav-item"><a href="#portfolio">Portfolio</a></li>
+		</ul>
+	</nav>
+	<div class="container">
+		<div class="background-image">
+			<article id="logo" class="background-image__landing-page">
+			</article>
+			<article id="aboutme" class="background-image__aboutme">
+				<div class="aboutmeholder">
+					<div class="aboutmeholder__img">
+						<img class="aboutmeholder__img" src="https://scontent.xx.fbcdn.net/v/t1.0-9/11904679_937290749651160_4290794153514771811_n.jpg?oh=002cd1f3fb551ee66d69f15f815888a1&oe=5876A8DF">
+					</div>
+					<div class="aboutmeholder__text">
+						<h1>Frontend-utvecklare</h1>
+						<p></p>
+					</div>
+					<button class="button__aboutme">Show who i am</button>
+				</div>
+			</article>
+			<article id="portfolio" class="background-image__portfolio">
+			</article>
+		</div>
+	</div>
 </body>
-
 </html>
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="stylesheet/dist/main.css">
+<script src=https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js></script>
+<script src="javascript/main.js"></script>
