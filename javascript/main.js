@@ -79,6 +79,8 @@ $(function() {
 });
 })
 
+
+
 $(document).ready(function() {
     var stickyNavTop = $('.nav').offset().top;
     
