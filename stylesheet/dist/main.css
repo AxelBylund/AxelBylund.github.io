@@ -165,21 +165,29 @@ title {
 .aboutmeholder {
   text-align: center;
   height: 100%;
-  padding-top: 15px; }
+  padding-top: 15px;
+  font-family: 'Indie flower'; }
   .aboutmeholder__img {
-    height: 180px;
-    width: 180px;
+    height: 303px;
+    width: 227px;
     background-color: #fff;
     margin: 0 auto;
     display: none;
-    border-radius: 5px; }
+    border-radius: 10px; }
   .aboutmeholder__text {
     color: white;
-    display: none; }
-    .aboutmeholder__text h1 {
-      font-family: 'Indie flower';
-      font-size: 30px;
+    display: none;
+    margin: 0 auto;
+    width: 50%;
+    font-size: 20px; }
+    .aboutmeholder__text p {
       margin-top: 10px; }
+    @media only screen and (min-width: 320px) and (max-width: 768px) {
+      .aboutmeholder__text {
+        width: 250px; } }
+    .aboutmeholder__text h1 {
+      font-size: 30px;
+      margin-top: 15px; }
   .aboutmeholder .button__aboutme {
     width: 250px;
     height: 50px;

@@ -72,9 +72,9 @@ $(function() {
 });
 
   $('.button__aboutme').click(function(){
-    $('.button__aboutme').fadeOut(1500, function() {
+    $('.button__aboutme').fadeOut(800, function() {
         $('.aboutmeholder__img').fadeIn(1000);
-        $('.aboutmeholder__text').fadeIn(1000);
+        $('.aboutmeholder__text').fadeIn(2500);
     });
 });
 })

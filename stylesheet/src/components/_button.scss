@@ -2,21 +2,30 @@
 	text-align: center;
 	height: 100%;
 	padding-top: 15px;
+	font-family: 'Indie flower';
 	&__img {
-		height: 180px;
-		width: 180px;
+		height: 303px;
+		width: 227px;
 		background-color: #fff;
 		margin: 0 auto;
 		display: none;
-		border-radius: 5px;
+		border-radius: 10px;
 	}
 	&__text {
 		color: white;
 		display: none;
-		h1 {
-			font-family: 'Indie flower';
-			font-size: 30px;
+		margin: 0 auto;
+		width: 50%;
+		font-size: 20px;
+		p {
 			margin-top: 10px;
+		}
+		@media only screen and (min-width: 320px) and (max-width: 768px) {
+			width: 250px;
+		}
+		h1 {
+			font-size: 30px;
+			margin-top: 15px;
 		}
 	}
 
