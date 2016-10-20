@@ -1,39 +1,35 @@
-html,
-body {
-  height: 100%;
-}
-
 /* BACKGROUND */
+
 .lowpolybackground {
-  width: 100%;
-  height: 100%;
-  /*background-size: cover;
+  background-size: cover;
   background-color: transparent;
-  */
-  
-  
   animation: pulse 10s infinite;
-  
-  
-  
-  }
+}
 
 
 /* BACKGROUND ANIMATION */
+
 @keyframes pulse {
-    0% {
-     background: url(../../vendors/images/download.svg) no-repeat center center fixed;
-    }
-    50% {
-      background: url(../../vendors/images/background.png) no-repeat center center fixed;
-    }
-    100% {
-     background: url(../../vendors/images/download.svg) no-repeat center center fixed;
-    }
+  0% {
+    background: url(../../vendors/images/download.svg) no-repeat center center fixed;
+  }
+  50% {
+    background: url(../../vendors/images/background.png) no-repeat center center fixed;
+  }
+  100% {
+    background: url(../../vendors/images/download.svg) no-repeat center center fixed;
+  }
 }
+
+
 /* END OF BACKGROUND */
 
+/*.construction {
+  display: none;
+}*/
+
 /* NAVBAR */
+
 .brand-name {
   font-family: 'Indie Flower', cursive !important;
   font-size: 70px;
@@ -54,7 +50,8 @@ body {
   border-bottom: 2px solid white !important;
 }
 
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
   border: none;
 }
 
@@ -62,7 +59,7 @@ body {
   background-color: white !important;
 }
 
-ul li a{
+ul li a {
   color: white !important;
   background-color: transparent !important;
 }
@@ -70,32 +67,28 @@ ul li a{
 .active {
   background-color: #562D8E !important;
 }
+
+
 /* END OF NAVBAR */
 
+
 /* DESKTOP NAVBAR */
-.navbar-default @media (min-width: 800px) {
-  body,
-  .navbar,
-  .navbar-default {
-    background-color: transparent !important;
-    color: white !important;
-    border-color: none;
+
+@media screen and (min-width: 800px) {
+  .lowpolybackground {
+    display: none !important;
   }
-  .navbar-brand,
-  .navbar-brand:focus {
-    color: white !important;
+  .navbar {
+    display: none !important;
   }
-  a {
-    color: white;
-    text-decoration: none;
-  }
-  .navbar .navbar-nav {
-    display: inline-block;
-    float: none;
-    vertical-align: top;
-  }
-  .navbar .navbar-collapse {
-    text-align: center;
+  .construction {
+    display: block;
+    color: black;
+    width: 500px;
+    height: 500px;
+    background-color: purple;
   }
 }
+
+
 /* END OF DESKTOP NAVBAR */

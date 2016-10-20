@@ -1,3 +1,3 @@
-$("p").on("swipe", function () {
-  $(this).hide();
-});
+function MYNAMEISETHAN() {
+  console.log('Gasm is a noob');
+}
