@@ -3,7 +3,7 @@
 .lowpolybackground {
   background-size: cover;
   background-color: transparent;
-  animation: pulse 10s infinite;
+  animation: pulse 30s infinite;
 }
 
 
@@ -11,22 +11,19 @@
 
 @keyframes pulse {
   0% {
-    background: url(../../vendors/images/download.svg) no-repeat center center fixed;
+    background: url(../../vendors/images/mobile/mobile_start.svg) no-repeat center fixed;
   }
   50% {
-    background: url(../../vendors/images/background.png) no-repeat center center fixed;
+    background: url(../../vendors/images/mobile/pattern.svg) no-repeat center fixed;
   }
   100% {
-    background: url(../../vendors/images/download.svg) no-repeat center center fixed;
+    background: url(../../vendors/images/mobile/mobile_start.svg) no-repeat center fixed;
   }
 }
 
 
 /* END OF BACKGROUND */
 
-/*.construction {
-  display: none;
-}*/
 
 /* NAVBAR */
 
@@ -70,6 +67,14 @@ ul li a {
 
 
 /* END OF NAVBAR */
+
+#swipe {
+  border: 2px solid black;
+  height: 80vh;
+  width: 100vw;
+  margin: 0 auto;
+  text-align: center;
+}
 
 
 /* DESKTOP NAVBAR */
