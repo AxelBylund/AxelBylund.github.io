@@ -6,9 +6,9 @@
   animation: pulse 30s infinite;
 }
 
+/* ANIMATIONS*/
 
 /* BACKGROUND ANIMATION */
-
 @keyframes pulse {
   0% {
     background: url(../../vendors/images/mobile/mobile_start.svg) no-repeat center fixed;
@@ -20,16 +20,21 @@
     background: url(../../vendors/images/mobile/mobile_start.svg) no-repeat center fixed;
   }
 }
-
-
 /* END OF BACKGROUND */
+
+/* SWIPE DIV ANIMATION */
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+/* END OF SWIPE DIV ANIMATION*/
+
+/* END OF ANIMATIONS*/
 
 
 /* NAVBAR */
-
 .brand-name {
   font-family: 'Indie Flower', cursive !important;
-  font-size: 70px;
+  font-size: 85px;
   margin: 25px;
   text-align: center;
   color: #562D8E !important;
@@ -74,12 +79,50 @@ ul li a {
   width: 100vw;
   margin: 0 auto;
   text-align: center;
+  position: relative;
 }
 
-.yellow {
+#swipe .title {
+  font-size: 45px;
+  font-family: 'Indie Flower', cursive !important;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.left {
+  opacity: 0;
+  margin-top: 100px;
   background-color: yellow;
+  float: left;
+  width: 33%;
+  animation: fadeIn 3s infinite;
 }
 
+.right {
+  opacity: 0;
+  margin-top: 100px;
+  background-color: purple;
+  float: right;
+  width: 33%;
+  /*animation: fadeIn 1.5s infinite;*/
+}
+
+.fade-in {
+  opacity: 0;
+  -webkit-animation:fadeIn ease-in 1.5;
+  -moz-animation:fadeIn ease-in 1.5;
+  animation:fadeIn ease-in 1.5;
+
+  -webkit-animation-fill-mode:backwards;
+  -moz-animation-fill-mode:backwards;
+  animation-fill-mode:backwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
 
 /* DESKTOP NAVBAR */
 
