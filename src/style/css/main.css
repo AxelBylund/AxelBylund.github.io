@@ -11,13 +11,13 @@
 /* BACKGROUND ANIMATION */
 @keyframes pulse {
   0% {
-    background: url(../../vendors/images/mobile/mobile_start.svg) no-repeat center fixed;
+    background: url(../../vendors/images/mobile/mobile_start1.svg) no-repeat center;
   }
   50% {
-    background: url(../../vendors/images/mobile/pattern.svg) no-repeat center fixed;
+    background: url(../../vendors/images/mobile/mobile_end1.svg) no-repeat center;
   }
   100% {
-    background: url(../../vendors/images/mobile/mobile_start.svg) no-repeat center fixed;
+    background: url(../../vendors/images/mobile/mobile_start1.svg) no-repeat center;
   }
 }
 /* END OF BACKGROUND */
@@ -41,9 +41,14 @@
   padding: 10px;
 }
 
+.navbar-toggle {
+  background-color: #562D8E !important;
+  border: none;
+}
+
 .navbar,
 .navbar-default,
-.navbar-toggle .collapsed {
+.navbar-toggle.collapsed {
   background-color: transparent !important;
   border: none;
 }
@@ -97,7 +102,10 @@ ul li a {
   background-color: yellow;
   float: left;
   width: 33%;
-  animation: fadeIn 3s infinite;
+  animation: fadeIn 4s;
+  -webkit-animation-delay: 1s; /* Safari 4.0 - 8.0 */
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
 }
 
 .right {
@@ -106,22 +114,10 @@ ul li a {
   background-color: purple;
   float: right;
   width: 33%;
-  /*animation: fadeIn 1.5s infinite;*/
-}
-
-.fade-in {
-  opacity: 0;
-  -webkit-animation:fadeIn ease-in 1.5;
-  -moz-animation:fadeIn ease-in 1.5;
-  animation:fadeIn ease-in 1.5;
-
-  -webkit-animation-fill-mode:backwards;
-  -moz-animation-fill-mode:backwards;
-  animation-fill-mode:backwards;
-
-  -webkit-animation-duration:1s;
-  -moz-animation-duration:1s;
-  animation-duration:1s;
+  animation: fadeIn 4s;
+  -webkit-animation-delay: 3s; /* Safari 4.0 - 8.0 */
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
 }
 
 /* DESKTOP NAVBAR */
