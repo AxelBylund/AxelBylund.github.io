@@ -74,8 +74,6 @@ ul li a {
 .active {
   background-color: #562D8E !important;
 }
-
-
 /* END OF NAVBAR */
 
 #swipe {
@@ -87,7 +85,7 @@ ul li a {
   position: relative;
 }
 
-#swipe .title {
+#swipe .header {
   font-size: 45px;
   font-family: 'Indie Flower', cursive !important;
 }
