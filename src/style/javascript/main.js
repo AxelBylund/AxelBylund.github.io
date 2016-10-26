@@ -10,8 +10,8 @@ $(document).ready(function() {
 	if ($('.overlay').is(":visible")) {
 		$('.navbar').hide();
 	};
-	$('.button-text').on('click', function() {
-		$('.overlay').fadeOut('3000');
+	$('.button-text').click(function() {
+		$('.overlay').fadeOut('slow');
 		$('.navbar').show();
 	})
-})
+});
