@@ -13,6 +13,11 @@
   position:   fixed; 
   visibility: visible;
 }
+.overlay-text,
+.overlay-button {
+  background: black;
+}
+
 /* GLITCH */
 .glitch {
   position: relative;
@@ -34,7 +39,6 @@ svg{
   position: relative;
   overflow: hidden; 
   margin: 0 auto;
-  background: black;
 }
 /* END OF GLITCH */
 
