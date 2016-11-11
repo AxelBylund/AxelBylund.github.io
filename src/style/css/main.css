@@ -1,3 +1,10 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
 /* LANDINGPAGE */
 
 @import url(http://fonts.googleapis.com/css?family=Share+Tech+Mono);
@@ -58,6 +65,8 @@ svg {
     background-size: cover;
     background-color: transparent;
     animation: pulse 30s infinite;
+    height: 100%;
+    width: 100%;
     /*transform: translateZ(0);
     -webkit-transform: translateZ(0);
     -ms-transform: translateZ(0);
@@ -72,19 +81,19 @@ svg {
 
 @keyframes pulse {
     0% {
-        background: url(../../vendors/images/mobile/ladda%20ned.png) no-repeat center;
+        background: url(../../vendors/images/mobile/mobile-start.png) no-repeat center;
     }
     25% {
-        background: url(../../vendors/images/mobile/ladda%20ned2.png) no-repeat center;
+        background: url(../../vendors/images/mobile/mobile-end.png) no-repeat center;
     }
     50% {
-        background: url(../../vendors/images/mobile/ladda%20ned.png) no-repeat center;
+        background: url(../../vendors/images/mobile/mobile-start.png) no-repeat center;
     }
     75% {
-        background: url(../../vendors/images/mobile/ladda%20ned2.png) no-repeat center;
+        background: url(../../vendors/images/mobile/mobile-end.png) no-repeat center;
     }
     100% {
-        background: url(../../vendors/images/mobile/ladda%20ned.png) no-repeat center;
+        background: url(../../vendors/images/mobile/mobile-start.png) no-repeat center;
     }
 }
 
@@ -146,10 +155,11 @@ ul li a {
 
 #swipe {
     border: 2px solid black;
-    height: 80vh;
+    height: 85vh;
     margin: 0 auto;
     text-align: center;
     position: relative;
+    background-color: transparent;
 }
 
 #swipe .header {

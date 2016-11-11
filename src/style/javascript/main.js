@@ -14,6 +14,5 @@ $(document).ready(function () {
         $('.navbar').show();
         $('.left').hide().fadeIn(2000);
         $('.right').hide().fadeIn(5000);
-        console.log('asd');
     });
 });
