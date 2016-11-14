@@ -157,10 +157,10 @@ ul li a {
 
 #swipe .header {
     font-size: 45px;
-    font-family: 'Indie Flower', cursive !important;
+    font-family: 'Indie Flower' !important;
 }
 
-.turquoise {
+. {
     background-color: turquoise;
 }
 
