@@ -148,6 +148,7 @@ ul li a {
 
 #swipe {
     height: 85vh;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
     position: relative;
@@ -159,26 +160,16 @@ ul li a {
     font-family: 'Indie Flower', cursive !important;
 }
 
-.orange {
-    background-color: orange;
-}
-
 .turquoise {
     background-color: turquoise;
 }
 
-.left {
-    margin-top: 100px;
-    background-color: yellow;
-    float: left;
-    width: 33%;
+.orange {
+    background-color: orange;
 }
 
-.right {
-    margin-top: 100px;
-    background-color: purple;
-    float: right;
-    width: 33%;
+main {
+    position: relative;
 }
 
 

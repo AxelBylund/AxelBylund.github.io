@@ -1,17 +1,23 @@
 window.addEventListener('load', function () {
     var element = document.getElementById('swipe');
     var hammertime = Hammer(element).on("swipeleft swiperight", function (event) {
-        $('#swipe').toggleClass('orange');
         /*
         console.log(event.type);
         console.log(event.direction);
         */
+        if (event.direction == 4) {
+            console.log('nu kör vi höger');
+            if ($('#swipe').hasClass('turquoise')) {
+                $('#swipe').removeClass('turquoise');
+            }
+            $('#swipe').addClass('orange');
+        }
         if (event.direction == 2) {
             console.log('nu kör vi vänster');
-            $(this).switchClass('orange', 'turquoise', 1000, "easeInOutQuad");
-        }
-        else if (event.direction == 4) {
-            console.log('nu kör vi höger');
+            if ($('#swipe').hasClass('orange')) {
+                $('#swipe').removeClass('orange');
+            }
+            $('#swipe').addClass('turquoise');
         }
     });
 });
